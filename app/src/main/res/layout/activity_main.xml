@@ -7,74 +7,73 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="118dp"
-        android:layout_height="23dp"
-        android:text="Hello World!"
+        android:id="@+id/txEntero"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:text="Valor entero almacenado"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.131" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/inputEntero"
         android:layout_width="212dp"
         android:layout_height="52dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:hint="Ingrese Entero"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="119dp"
-        android:layout_height="21dp"
+        android:id="@+id/txTexto"
+        android:layout_width="216dp"
+        android:layout_height="25dp"
         android:layout_marginStart="83dp"
+        android:layout_marginTop="11dp"
         android:layout_marginEnd="210dp"
-        android:layout_marginBottom="21dp"
-        android:text="TextView"
+        android:text="Texto almacenado"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTexto" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/inputTexto"
         android:layout_width="214dp"
         android:layout_height="57dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="17dp"
         android:ems="10"
+        android:hint="Ingrese Texto"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/inputEntero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputEntero"
+        app:layout_constraintTop_toBottomOf="@+id/txEntero" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="112dp"
-        android:layout_height="26dp"
-        android:text="TextView"
+        android:id="@+id/txSwitch"
+        android:layout_width="151dp"
+        android:layout_height="61dp"
+        android:text="Valor switch almacenado"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.429" />
+        app:layout_constraintVertical_bias="0.347" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchA"
         android:layout_width="130dp"
         android:layout_height="57dp"
         android:layout_marginTop="56dp"
@@ -82,32 +81,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/inputTexto" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/inputDecimal"
         android:layout_width="212dp"
         android:layout_height="55dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        android:hint="Ingrese un valor decimal"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/txSwitch"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/switch1"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintStart_toStartOf="@+id/switchA"
+        app:layout_constraintTop_toBottomOf="@+id/switchA" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="126dp"
-        android:layout_height="31dp"
+        android:id="@+id/txDecimal"
+        android:layout_width="207dp"
+        android:layout_height="34dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="Valor Decimal Almacenado"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintStart_toStartOf="@+id/inputDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/inputDecimal" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="409dp"
@@ -118,10 +117,10 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="221dp">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btnGuardar"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="60dp"
@@ -133,7 +132,7 @@
                 app:layout_constraintVertical_bias="0.197" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnBorrar"
                 android:layout_width="120dp"
                 android:layout_height="50dp"
                 android:backgroundTint="#DC1717"
@@ -141,7 +140,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.343"
-                app:layout_constraintStart_toEndOf="@+id/button5"
+                app:layout_constraintStart_toEndOf="@+id/btnGuardar"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.195" />
 
@@ -153,9 +152,9 @@
                 android:backgroundTint="#3B7015"
                 android:text="Mostrar valores"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="@+id/btnBorrar"
                 app:layout_constraintHorizontal_bias="0.545"
-                app:layout_constraintStart_toStartOf="@+id/button5" />
+                app:layout_constraintStart_toStartOf="@+id/btnGuardar" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
